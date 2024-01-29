@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    /* margin-top: 0; */
+}
+
+.main-menu h1 {
+    display: inline-block;
+    padding: 1rem 0;
+    border-bottom: 2px solid currentColor;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.pizzas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+}
+@media screen and (max-width: 850px){
+    .pizzas {
+        display: flex;
+        flex-direction: column;
+    }
+}
